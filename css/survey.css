@@ -1,28 +1,96 @@
-/* Survey page styles */
+    /* Survey page styles */
 
-.photo{
-  width: 60%;
-  padding: 10px;
-}
+    .flex {
+        justify-content: space-between;
+    }
+    .heading {
+        margin-top: 2em;
+    }
+    .photo {
+        display: none;
+    }
+    button {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        border-radius: 2px;
+        font-size: 1em;
+    }
+    h1 {
+        font-size: 1rem;
+        font-weight: normal;
+    }
+    .container {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .newsletter,
+    .survey {
+        text-align: left;
+    }
+    /* --------------------form styles -----------------------*/
 
-form {
-  margin: 0 auto;
-  text-align: left;
-  display: inline-block;
-}
+    form {
+        width: 100%;
+        margin: 0 auto;
+        text-align: left;
+        display: inline-block;
+    }
+    fieldset {
+        width: 100%;
+        border: none;
+        margin-bottom: 1.2em;
+        padding: 0;
+    }
+    legend {
+        font-weight: 600;
+        margin-bottom: 1em;
+        font-size: 1em;
+    }
+    label {
+        display: inline-block;
+        margin-top: 20px;
+    }
+    span {
+        display: block;
+        font-size: .8em;
+        color: rgba(0, 0, 0, .6);
+    }
+    /*--------------CSS selectors------------------------*/
 
-.container{
-  text-align: center;
-}
-.newsletter{
-  text-align: right;
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    textarea,
+    select {
+        font-family: 'Libre Franklin', sans-serif;
+        font-size: 1em;
+        line-height: 1.8;
+        background: #F2F2F2;
+        border: none;
+        height: auto;
+        padding: 1em;
+        width: 100%;
+        border-radius: 5px;
+    }
+    /*--------------Focus states------------------------*/
 
-}
+    input:focus,
+    select:focus,
+    textarea:focus {
+        box-shadow: 0 0 0 2px rgba(151, 76, 132, .5) inset;
+        outline: none;
+    }
+    /* Styles for larger screens */
 
-
-/* Styles for larger screens */
-@media screen and (min-width: 840px) {
-  .photo{
-    width: 40%;
-  }
-}
+    @media screen and (min-width: 840px) {
+        .photo {
+            display: inline-block;
+            width: 40%;
+        }
+        form {
+            width: 100%;
+            margin: 0 auto;
+            padding-left: 20px;
+        }
+    }

@@ -1,57 +1,65 @@
-<!doctype html>
-<html>
-  <head>
-      <meta charset="utf-8">
-      <link href="css/styles.css" rel="stylesheet" type="text/css" />
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
-      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
-      <title>Accessible Frog</title>
-  </head>
+<!DOCTYPE html>
+<html lang="en">
 
-  <body>
-    <div class="main-nav">
-      <ul class="nav">
-        <li class="name"><a href="#">Accessible Frog</a></li>
-        <li><a href="tour.html">Tour</a></li>
-        <li><a href="survey.html">Survey</a></li>
-      </ul>
-    </div>
+<head>
+    <meta charset="utf-8">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <link href='https://fonts.googleapis.com/css?family=Libre+Franklin:600,800,900%7CPermanent+Marker' rel='stylesheet' type='text/css'>
+    <title>Accessible Frog</title>
+    <link rel="icon" type="image/ico" href="favicon.ico">
+</head>
 
-    <header>
+<body>
+    <nav role="navigation" class="main-nav">
+        <ul class="nav">
+            <li class="name"><a href="#">Accessible Frog</a></li>
+            <li><a href="tour.html">Tour</a></li>
+            <li><a href="survey.html">Survey</a></li>
+        </ul>
+    </nav>
+
+    <header role="banner">
+        <h1 class="name">Accessible frog</h1>
+        <h2 class="tagline">we make awesome music</h2>
     </header>
 
-    <main>
-      <div class="card">
-        <div class="flex">
-          <img class="photo" src= "img/soul_of_the_frog.jpg">
-          <div class="information">
-            <p class="heading">New album out now</p>
-            <p>Soul of the Frog</p>
-            <p>Digital/CD/ 2 x LP</p>
-            <a href="#" class="buy">Purchase Album</a>
-          </div>
+    <main role="main">
+        <div class="card">
+            <div class="flex">
+                <img class="photo" src="img/soul_of_the_frog.jpg" alt="Soul of the Frog album cover">
+                <div class="information">
+                    <h1 class="heading">New album out now</h1>
+                    <p>Soul of the Frog</p>
+                    <p>Digital/CD/ 2 x LP</p>
+                    <button type="button" class="button">Purchase Album</button>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <div class="card">
-        <div class="flex">
-          <img class="photo" src= "img/lead_singer.jpg">
-          <div class="information">
-            <p class="heading">About the band</p>
-            <p>Photo booth aliquip pinterest meggings. Sapiente commodo wolf put a bird on it fingerstache gentrify, meh polaroid vegan everyday carry.</p>
-          </div>
+        <div class="card">
+            <div class="flex">
+                <img class="photo" src="img/lead_singer.jpg" alt="Lead singer performing">
+                <div class="information">
+                    <h1 class="heading">About the band</h1>
+                    <p>Photo booth aliquip pinterest meggings. Sapiente commodo wolf put a bird on it fingerstache gentrify, meh polaroid vegan everyday carry.</p>
+                </div>
+            </div>
         </div>
-      </div>
     </main>
 
-    <footer>
-      <ul>
-        <li><a href="#" class="social twitter"></a></li>
-        <li><a href="#" class="social youtube"></a></li>
-        <li><a href="#" class="social spotify"></a></li>
-      </ul>
-      <p class="copyright">Copyright 2015, Accessible Frog</p>
+    <footer role="contentinfo">
+        <div class="footer">
+            <ul>
+                <li><a href="#" class="social twitter"><img src="img/twitter-32.png" alt="Visit us on Twitter"></a></li>
+                <li><a href="#" class="social youtube"><img src="img/youtube-32.png" alt="Check out our Youtube channel"></a></li>
+                <li><a href="#" class="social spotify"><img src="img/spotify-32.png" alt="Listen to us on Spotify"></a></li>
+            </ul>
+            <p class="copyright">Copyright 2015, Accessible Frog</p>
+        </div>
+
     </footer>
 
-  </body>
+</body>
+
 </html>
